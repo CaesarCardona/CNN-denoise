@@ -1,17 +1,20 @@
+# CNN Denoise usage
 
-if no environment already:
-python -m venv venv
+## Requirements
+Python3 in order to create virtual environment and import libraries from requirements.txt
 
-to add noise, put images in dataset and execute
-add-noise.py
+## Execution
+Add noise to your image Dataset
+```bash
+python3 add-noise.py
+```
+Train the network
+```bash
+python3 ai_agent.py
+```
+MSE is shown in terminal for each Epoch and images are saved in 'predicted' folder.
 
-source venv/bin/activate
-
-
-
-to train use model-denoise.py
-results are saved in predicted foldera
-
-evaluate.py to evaluate again
-
-
+To evaluate using trained network:
+```bash
+python3 evaluate.py
+```
